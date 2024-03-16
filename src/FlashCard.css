@@ -1,0 +1,28 @@
+.flashcard {
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flashcard.show-answer {
+    /* Simple flip effect on click */
+    transform: rotateY(180deg);
+  }
+  
+
+  .flashcard .answer.correct {
+    color: green;
+  }
+  
+  .flashcard .answer.incorrect {
+    color: red;
+  }
+  
+  .flashcard .feedback {
+    font-weight: bold;
+  }
+  
